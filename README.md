@@ -5,6 +5,7 @@
 
 ### Howto create Lambrate Linux Stable
 edit file ll-22-1-livemedia-creator.sh with:
+
 #!/bin/bash
 sudo setenforce 0
 sudo livemedia-creator --ks /home/idraulico/LambrateLinux-devel/LL-22-1-C-Stabile/ll-live-cinnamon.ks \
@@ -14,6 +15,7 @@ sudo livemedia-creator --ks /home/idraulico/LambrateLinux-devel/LL-22-1-C-Stabil
 
 ### Howto create Lambrate Linux Rolling
 edit file ll-22-1-livemedia-creator.sh with:
+
 #!/bin/bash
 sudo setenforce 0
 sudo livemedia-creator --ks /home/idraulico/LambrateLinux-devel/LL-22-1-C-Rolling/ll-live-cinnamon.ks \
