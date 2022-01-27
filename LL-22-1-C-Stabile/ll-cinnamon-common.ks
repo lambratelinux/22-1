@@ -3,7 +3,7 @@
 # mailto:info@lambratelinux.org
 # Maintainer(s): Sergio Agnes (aka idraulico)
 # email: idraulico.py@gmail.com
-# Progetto: Lambrate Linux Workstation
+# Progetto: Lambrate Linux Cinnamon
 # kickstart file: ll-cinnamon-common.ks
 # incluso in: ll-live-cinnamon.ks
 
@@ -17,14 +17,13 @@
 @libreoffice
 #-@workstation-product
 
--lightdm
--lightdm-gobject
--lightdm-gtk
--lightdm-qt5
--lightdm-settings
--slick-greeter-cinnamon
--slick-greeter
-gdm
+#lightdm
+#lightdm-gobject
+#lightdm-gtk
+#lightdm-qt5
+#lightdm-settings
+#slick-greeter-cinnamon
+#slick-greeter
 
 # Exclude unwanted packages from @anaconda-tools group
 -gfs2-utils
@@ -35,6 +34,7 @@ gdm
 -fedora-release-workstation
 -fedora-workstation-backgrounds
 -fedora-chromium-config
+-xawtv
 ### Cinnamon vuole il pacchetto "gnome-backgrounds" quindi non si può togliere
 #-gnome-backgrounds
 
@@ -55,7 +55,8 @@ fedora-logos-httpd
 #net-tools  #per implementare ifconfig e iwconfig
 #firewall-config
 google-chrome-stable
-cockpit
+#code
+#cockpit
 
 #################### Pacchetti per generare il sistema LAMBRATE LINUX ##############
 #-generic-release
@@ -95,11 +96,11 @@ gparted
 htop
 lshw 
 gpm
-gnote
+#gnote
 claws-mail 
 pluma 
-sound-juicer
-grip
+#sound-juicer
+#grip
 #blender
 #inkscape
 gimp
@@ -107,7 +108,7 @@ gimp
 #crack-attack
 #kpat
 #pinball
-#aisleriot
+aisleriot
 #opera-stable
 
 ###App non necessarie aggiunte

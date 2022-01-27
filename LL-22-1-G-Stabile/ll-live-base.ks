@@ -76,7 +76,9 @@ url --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$relea
 ### Leggi il repo locale ed escludi alcuni pacchetti
 #repo --name=rpmLLrepo --includepkgs=LambrateLinux-release,LambrateLinux-release-common,LambrateLinux-release-notes,LL-desktop-backgrounds-basic,LL-desktop-backgrounds-compat,LL-desktop-backgrounds-gnome,LL-desktop-backgrounds-waves,opera-stable --baseurl=file:///home/idraulico/rpmLLrepo/
 ### Leggi ed installa tutto quel che c'è nel repo locale (rpmLLrepo)
+
 repo --name=rpmLLrepo --baseurl=file:///home/idraulico/rpmLLrepo/
+
 ### Altri repo (tutto da testare)
 #repo --name=lambratelinux-free --includepkgs=LambrateLinux-release --baseurl=/home/idraulico/LambrateLinux/LL27-devel/Pacchetti-RPM/
 #repo --name=lambratelinux-free --baseurl=https://github.com/lambratelinux/2017

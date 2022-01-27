@@ -12,7 +12,7 @@ sudo setenforce 0
 #--project fedora-35 --make-iso --volid fedora-35 --iso-only --iso-name fedora-35.iso --releasever 35 --macboot --no-virt
 
 sudo livemedia-creator --ks /home/idraulico/LambrateLinux-devel/LL-22-1-C-Stabile/ll-live-cinnamon.ks \
---tmp /home/idraulico/LambrateLinux-devel/LL-22-1-C/tmp \
---resultdir /home/idraulico/LambrateLinux-devel/LL-22-1-C/lmc \
+--tmp /home/idraulico/LambrateLinux-devel/LL-22-1-C-Stabile/tmp \
+--resultdir /home/idraulico/LambrateLinux-devel/LL-22-1-C-Stabile/lmc \
 --project LL-22-1-C-Stabile-Live --make-iso --volid LL-22-1-C-Stabile-Live --iso-only --iso-name LL-22-1-C-Stabile-Live.iso --releasever 35 --macboot --no-virt
 

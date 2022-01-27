@@ -7,13 +7,13 @@
 # kickstart file: ll-live-base.ks
 # incluso in: ll-live-workstation.ks
 
-%include /home/idraulico/LambrateLinux-devel/LL-22-1-G/ll-live-base.ks
-%include /home/idraulico/LambrateLinux-devel/LL-22-1-G/ll-workstation-common.ks
+%include /home/idraulico/LambrateLinux-devel/LL-22-1-G-Stabile/ll-live-base.ks
+%include /home/idraulico/LambrateLinux-devel/LL-22-1-G-Stabile/ll-workstation-common.ks
 #
 # Disable this for now as packagekit is causing compose failures
 # by leaving a gpg-agent around holding /dev/null open.
 #
-#include /home/idraulico/LambrateLinux-devel/LL-22-1-Gs/snippets/packagekit-cached-metadata.ks
+#include /home/idraulico/LambrateLinux-devel/LL-22-1-G-Stabile/snippets/packagekit-cached-metadata.ks
 
 #part / --size 6656
 part / --size 8192
@@ -54,15 +54,15 @@ FOE
 
 #### Per ERRORE al boot di "dracut-pre-pivot": /etc/multipath.conf does not exist, blacklisting all devices. Si ovvia con: /sbin/mpathconf --enable
 
-/sbin/mpathconf --enable
-cat > /etc/multipath.conf << FOE
+#/sbin/mpathconf --enable
+#cat > /etc/multipath.conf << FOE
 
-blacklist {
-}
+#blacklist {
+#}
 
-defaults {
-}
-FOE
+#defaults {
+#}
+#FOE
 
 # make the installer show up
 if [ -f /usr/share/applications/liveinst.desktop ]; then

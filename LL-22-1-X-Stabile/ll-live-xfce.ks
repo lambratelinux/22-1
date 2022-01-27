@@ -6,8 +6,8 @@
 # Progetto: Lambrate Linux Xfce
 # kickstart file: ll-live-xfce.ks
 
-%include /home/idraulico/LambrateLinux-devel/LL-22-1-X/ll-live-base.ks
-%include /home/idraulico/LambrateLinux-devel/LL-22-1-X/ll-xfce-common.ks
+%include /home/idraulico/LambrateLinux-devel/LL-22-1-X-Stabile/ll-live-base.ks
+%include /home/idraulico/LambrateLinux-devel/LL-22-1-X-Stabile/ll-xfce-common.ks
 
 part / --size=8192
 

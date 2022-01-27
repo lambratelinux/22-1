@@ -78,9 +78,6 @@ url --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$relea
 
 repo --name=rpmLLrepo --baseurl=file:///home/idraulico/rpmLLrepo/
 
-
-
-
 ### includi alcuni pacchetti (NON HO CAPITO A COSA SERVE ???)
 #repo --name=rpmLLrepo --includepkgs=LambrateLinux-release,....ecc.
 ### Altri repo (tutto da testare)
@@ -96,7 +93,9 @@ repo --name=rpmfusion-free --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?
 repo --name=rpmfusion-free-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=rpmfusion-nonfree --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-nonfree-updates --mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
+
 repo --name=google-chrome --baseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64
+repo --name=VScode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 
 ##repo --name=remi --includepkgs=libdvd*,remi-release* --baseurl=http://rpms.famillecollet.com/fedora/$releasever/remi/$basearch/
 #repo --name=remi --includepkgs=libdvd* --baseurl=http://rpms.famillecollet.com/fedora/$releasever/remi/$basearch/

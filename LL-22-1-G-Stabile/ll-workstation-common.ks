@@ -29,7 +29,7 @@
 -gfs2-utils
 -reiserfs-utils
 
-#################### pacchetti esclusi dall'idraulico :))
+#################### pacchetti inclusi o esclusi dall'idraulico :))
 # Exclude unwanted packages from @workstation-product group (Lambrate Linux è una generic-release)
 -fedora-release-workstation
 -fedora-workstation-backgrounds
@@ -49,7 +49,7 @@ fedora-logos-httpd
 -gnome-tour
 -fedora-bookmarks
 
-#################### pacchetti per Lambrate Linux aggiunti a quelli standard
+#################### pacchetti di app per Lambrate Linux aggiunti a quelli standard
 #initial-setup
 #net-tools  #per implementare ifconfig e iwconfig
 #firewall-config
